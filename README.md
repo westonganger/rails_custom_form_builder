@@ -11,6 +11,7 @@ Currently the html classes/semantics are setup for Bootstrap 5, however it is de
 - Copy the [`CustomFormBuilder` class](./helpers/custom_form_builder.rb) `app/helpers/` or wherever else you like
 - Copy the [`custom_form_for` helper method](./helpers/application_helper.rb) to `app/helpers/application_helper.rb`
 - Copy the [views](./views/) to `app/views/form_builder/`
+- (Optional) Copy the [`Forms::Base` class](./forms/base.rb) to `app/lib/forms/` as it provides a very useful base class for forms that arent backed by an activerecord model. Provides required features for validations and some `form_for` requirements
 
 ## Usage
 
