@@ -16,7 +16,7 @@ Currently the html classes/semantics are setup for Bootstrap 5, however it is de
 ## Usage
 
 ```erb
-<%= custom_form_for(..., defaults: {view_mode: false, input_html: {}}) do |f| %>
+<%= custom_form_for(@form, as: :my_form, url: request.path, defaults: {view_mode: false, input_html: {}}) do |f| %>
   <%= f.field :my_text, type: :text %>
   <%= f.field :my_num, type: :number %>
   <%= f.field :my_date, type: :date %>
